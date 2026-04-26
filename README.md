@@ -1,4 +1,4 @@
-# 📊 Status
+# 📊 Context Status
 
 Skill para Claude.ai que monitora a saúde da conversa em tempo real — exibindo um card estruturado com estimativa de contexto consumido, decisões-âncora por categoria, auto-diagnóstico de confiança e recomendação de ação.
 
@@ -10,7 +10,7 @@ Em conversas longas no Claude, o contexto se consome silenciosamente. Você não
 
 ## A solução
 
-A skill Status emite um card de saúde no início de cada conversa e nos marcos de 25%, 50% e 75% de contexto consumido. Cada card mostra:
+A skill Context Status emite um card de saúde no início de cada conversa e nos marcos de 25%, 50% e 75% de contexto consumido. Cada card mostra:
 
 ```
 📊 STATUS  [Turno N]  [Alta ✓]  [Guardian: inativo]
@@ -33,10 +33,10 @@ Além da visibilidade passiva, a skill faz um **auto-teste de confiança** antes
 
 ## Instalação
 
-1. Acesse a [última release](https://github.com/brunoflma/status/releases/latest) e baixe o arquivo `status-vX.X.X.zip`
+1. Acesse a [última release](https://github.com/brunoflma/context-status/releases/latest) e baixe o arquivo `status-vX.X.X.zip`
 2. Extraia o zip
 3. No Claude.ai: **avatar → Configurações → Skills → Instalar Skill**
-4. Selecione a pasta `status` extraída
+4. Selecione a pasta `context-status` extraída
 
 ---
 
@@ -52,9 +52,9 @@ saúde da sessão             quanto contexto resta
 ### Controles de automação
 
 ```
-/status off auto    — desativa marcos automáticos, mantém /status manual
-/status off         — desativa tudo exceto chamada explícita
-/status on          — reativa o modo anterior
+/context-status off auto    — desativa marcos automáticos, mantém /status manual
+/context-status off         — desativa tudo exceto chamada explícita
+/context-status on          — reativa o modo anterior
 ```
 
 O status do turno 1 não pode ser desativado — é o baseline da estimativa de toda a sessão.
