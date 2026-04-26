@@ -1,0 +1,14 @@
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Publicando Context Status v1.0
+  Título: Release
+  Detalhes extras incluídos.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+→ Montando o arquivo .zip...
+   + status/SKILL.md
+   → context-status.zip (5 KB) — validado ✓
+
+→ Criando/atualizando a release no GitHub...
+
+❌ Erro na API do GitHub (422): {"message":"Validation Failed","errors":[{"resource":"Release","code":"custom","message":"Repository is empty."}],"documentation_url":"https://docs.github.com/rest/releases/releases#create-a-release","status":"422"}

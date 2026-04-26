@@ -1,0 +1,17 @@
+# Credenciais — nunca commitar
+.github_config
+github.txt
+secrets.txt
+.env
+
+# Script de publicação — manter local, nunca commitar
+release.py
+
+# Zips gerados pelo release.py
+*.zip
+
+# Sistema
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
