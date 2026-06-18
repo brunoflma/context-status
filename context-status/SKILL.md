@@ -147,6 +147,7 @@ Confiança  — ícone lupa:
 - Campo Produzido: único que pode ser omitido se genuinamente vazio
 - Múltiplos itens nos campos: separados por ` · `
 - Usar `var(--color-text-primary/secondary/tertiary)` e `var(--color-border-tertiary)` para compatibilidade com modo escuro
+- **Segurança (Prevenção de XSS):** Sempre faça escape de caracteres HTML (`<`, `>`, `&`, `"`, `'`) ao renderizar conteúdo dinâmico (nomes de projetos, decisões, nomes de arquivos) nas rows de dados, pois o card é renderizado via ferramenta de visualização HTML.
 
 ---
 
