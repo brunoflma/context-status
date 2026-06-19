@@ -66,6 +66,7 @@ O status do turno 1 não pode ser desativado — é o baseline da estimativa de 
 **Barra de contexto:** estimativa cumulativa com margem declarada de ±8%. Verde até 40%, âmbar até 70%, vermelho acima disso. A estimativa cresce turno a turno sem recalcular do zero — o que mantém o drift sob controle.
 
 **Decisões-âncora em três categorias:**
+
 - **📋 Técnico** — arquitetura, ferramentas, configurações
 - **📁 Produzido** — arquivos e artefatos gerados na sessão
 - **🎯 Conteúdo** — acordos de tom, formato, escopo
@@ -73,6 +74,7 @@ O status do turno 1 não pode ser desativado — é o baseline da estimativa de 
 **Auto-diagnóstico de confiança (🔍):** Alta / Média / Baixa. Não é decorativo — quando cai para Baixa, a recomendação escala automaticamente para "Preparar Transferência".
 
 **Recomendação de ação:**
+
 - Sessão Estável → continuar
 - Verificação Recomendada → considerar checkpoint
 - Transferência Imediata → iniciar evacuação
@@ -110,11 +112,11 @@ Em sessões longas e críticas, instalar as duas é o setup mais seguro: o Statu
 
 ## Automação total (fora do Claude.ai)
 
-| Ambiente | Comportamento |
-|---|---|
-| Claude.ai | Card emitido na conversa, estimativa por pesos calibrados |
+| Ambiente        | Comportamento                                                   |
+| --------------- | --------------------------------------------------------------- |
+| Claude.ai       | Card emitido na conversa, estimativa por pesos calibrados       |
 | API Python/Node | Acesso a `usage.input_tokens` — percentual real, sem estimativa |
-| Claude Code | Integração nativa com subagentes do Guardian |
+| Claude Code     | Integração nativa com subagentes do Guardian                    |
 
 ---
 
