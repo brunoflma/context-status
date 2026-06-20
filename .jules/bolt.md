@@ -1,0 +1,4 @@
+## 2025-05-15 - Token Consumption Optimization in Prompt-Based LLM Applications
+
+**Learning:** In prompt-based LLM applications lacking executable code, performance bottlenecks often relate to input/output token usage rather than computational execution time. Multiline, unoptimized prompt assets (like SVGs) increase input tokens and slow processing. Additionally, LLMs tend to generate formatted, multiline outputs by default, which increases output tokens and degrades the Time To First Token (TTFT).
+**Action:** Always minify prompt assets (e.g., flatten multiline SVGs) to reduce input token consumption. Furthermore, explicitly instruct the LLM in the prompt to output minified HTML/SVG. This ensures the generated UI components consume fewer output tokens, directly improving generation speed and overall performance.
