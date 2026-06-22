@@ -97,35 +97,13 @@ Emitir sempre como **card HTML via ferramenta de visualização**, no topo da re
 ### Ícones SVG de referência (inline, stroke-only, sem fill, viewBox="0 0 16 16", aria-hidden="true")
 
 ```
-Contexto   — ícone usuário:
-  <circle cx="8" cy="5" r="2.5" stroke-width="1.5"/>
-  <path d="M3 14c0-3.5 2-5 5-5s5 1.5 5 5" stroke-width="1.5" stroke-linecap="round"/>
-
-Técnico    — ícone lista/clipboard:
-  <rect x="3" y="2" width="10" height="12" rx="1.5" stroke-width="1.5"/>
-  <line x1="6" y1="6" x2="11" y2="6" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="6" y1="9" x2="11" y2="9" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="6" y1="12" x2="9" y2="12" stroke-width="1.5" stroke-linecap="round"/>
-
-Produzido  — ícone pasta:
-  <path d="M2 5h4l1.5 2H14v7H2z" stroke-width="1.5" stroke-linejoin="round"/>
-
-Conteúdo   — ícone alvo/mira:
-  <circle cx="8" cy="8" r="5.5" stroke-width="1.5"/>
-  <circle cx="8" cy="8" r="2.5" stroke-width="1.5"/>
-  <circle cx="8" cy="8" r="0.8" fill="currentColor"/>
-
-Guardian   — ícone escudo:
-  <path d="M8 2L3 4.5V8c0 3 2.5 5 5 6 2.5-1 5-3 5-6V4.5z" stroke-width="1.5" stroke-linejoin="round"/>
-
-Alertas    — ícone triângulo de alerta:
-  <path d="M8 2L1.5 14h13z" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="8" y1="7" x2="8" y2="10.5" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="8" cy="12.5" r="0.7" fill="currentColor"/>
-
-Confiança  — ícone lupa:
-  <circle cx="7" cy="7" r="3.5" stroke-width="1.5"/>
-  <line x1="10" y1="10" x2="13.5" y2="13.5" stroke-width="1.5" stroke-linecap="round"/>
+Contexto   — ícone usuário: <circle cx="8" cy="5" r="2.5" stroke-width="1.5"/><path d="M3 14c0-3.5 2-5 5-5s5 1.5 5 5" stroke-width="1.5" stroke-linecap="round"/>
+Técnico    — ícone lista/clipboard: <rect x="3" y="2" width="10" height="12" rx="1.5" stroke-width="1.5"/><line x1="6" y1="6" x2="11" y2="6" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="9" x2="11" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="12" x2="9" y2="12" stroke-width="1.5" stroke-linecap="round"/>
+Produzido  — ícone pasta: <path d="M2 5h4l1.5 2H14v7H2z" stroke-width="1.5" stroke-linejoin="round"/>
+Conteúdo   — ícone alvo/mira: <circle cx="8" cy="8" r="5.5" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" stroke-width="1.5"/><circle cx="8" cy="8" r="0.8" fill="currentColor"/>
+Guardian   — ícone escudo: <path d="M8 2L3 4.5V8c0 3 2.5 5 5 6 2.5-1 5-3 5-6V4.5z" stroke-width="1.5" stroke-linejoin="round"/>
+Alertas    — ícone triângulo de alerta: <path d="M8 2L1.5 14h13z" stroke-width="1.5" stroke-linejoin="round"/><line x1="8" y1="7" x2="8" y2="10.5" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="12.5" r="0.7" fill="currentColor"/>
+Confiança  — ícone lupa: <circle cx="7" cy="7" r="3.5" stroke-width="1.5"/><line x1="10" y1="10" x2="13.5" y2="13.5" stroke-width="1.5" stroke-linecap="round"/>
 ```
 
 **Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita):
@@ -148,6 +126,7 @@ Confiança  — ícone lupa:
 - PT-BR sempre
 - Rótulos de turno nas âncoras: `[Turno N]`, nunca `[TN]`
 - Emitir o card e **continuar respondendo normalmente** — nunca pausar esperando confirmação
+- Emitir HTML e SVG sempre de forma minificada (sem quebras de linha e indentação) para economizar tokens
 - Campo Produzido: único que pode ser omitido se genuinamente vazio
 - Múltiplos itens nos campos: separados por `·`
 - Usar `var(--color-text-primary/secondary/tertiary)` e `var(--color-border-tertiary)` para compatibilidade com modo escuro
