@@ -90,7 +90,7 @@ Emitir sempre como **card HTML via ferramenta de visualização**, no topo da re
 - badge de confiança — verde (Alta) / âmbar (Média) / vermelho (Baixa)
 - badge do Guardian — azul info (inativo/ativo)
 
-**Zona 2 — Barra de contexto:** label "Contexto" + barra de progresso horizontal (height 6px, border-radius 3px, `role="progressbar"`, `aria-valuenow="N"`, `aria-valuemin="0"`, `aria-valuemax="100"`) preenchida proporcionalmente + percentual `~N% (±8%)`. Cor da barra: `#639922` ≤40% · `#EF9F27` 41–70% · `#E24B4A` >70%.
+**Zona 2 — Barra de contexto:** label "Contexto" + barra de progresso horizontal (height 6px, border-radius 3px, `role="progressbar"`, `aria-label="Contexto consumido"`, `aria-valuenow="N"`, `aria-valuemin="0"`, `aria-valuemax="100"`) preenchida proporcionalmente + percentual `~N% (±8%)`. Cor da barra: `#639922` ≤40% · `#EF9F27` 41–70% · `#E24B4A` >70%.
 
 **Zona 3 — Rows de dados:** cada row tem `ícone SVG (16×16, stroke, cor herdada, aria-hidden="true") + rótulo (cor secundária, min-width 80px) + valor (cor primária)`.
 
