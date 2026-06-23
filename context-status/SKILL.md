@@ -98,7 +98,7 @@ Emitir sempre como **card HTML via ferramenta de visualização**, no topo da re
 
 ```
 Contexto   — ícone usuário: <circle cx="8" cy="5" r="2.5" stroke-width="1.5"/><path d="M3 14c0-3.5 2-5 5-5s5 1.5 5 5" stroke-width="1.5" stroke-linecap="round"/>
-Técnico    — ícone lista/clipboard: <rect x="3" y="2" width="10" height="12" rx="1.5" stroke-width="1.5"/><line x1="6" y1="6" x2="11" y2="6" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="9" x2="11" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="12" x2="9" y2="12" stroke-width="1.5" stroke-linecap="round"/>
+Técnico    — ícone lista/clipboard: <rect x="3" y="2" width="10" height="12" rx="1.5" stroke-width="1.5"/><path d="M6 6h5M6 9h5M6 12h3" stroke-width="1.5" stroke-linecap="round"/>
 Produzido  — ícone pasta: <path d="M2 5h4l1.5 2H14v7H2z" stroke-width="1.5" stroke-linejoin="round"/>
 Conteúdo   — ícone alvo/mira: <circle cx="8" cy="8" r="5.5" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" stroke-width="1.5"/><circle cx="8" cy="8" r="0.8" fill="currentColor"/>
 Guardian   — ícone escudo: <path d="M8 2L3 4.5V8c0 3 2.5 5 5 6 2.5-1 5-3 5-6V4.5z" stroke-width="1.5" stroke-linejoin="round"/>
