@@ -7,3 +7,8 @@
 
 **Learning:** In prompt-based applications where the LLM is instructed to generate UI components, the length of the system prompt and instructions is critical for performance (Time To First Token and token consumption). SVGs with many separate elements (like multiple `<line>` elements) unnecessarily inflate the token count. Combining multiple primitive elements into a single `<path>` with a concise `d` attribute achieves the exact same visual result but significantly reduces the prompt's footprint.
 **Action:** When working on prompts that require the generation of SVGs, explicitly minify the provided SVGs and consolidate repetitive elements into single `<path>` definitions wherever possible.
+
+## 2023-10-27 - SVG Token Optimization for Prompt Engineering
+
+**Learning:** In prompt-based applications without executable application code, performance optimization takes the form of minimizing token consumption in prompts. SVGs can be surprisingly token-heavy. Combining multiple primitive elements (like `<circle>`, `<line>`, or multiple `<path>`s) into a single `<path>` element with a concise `d` attribute achieves the exact same visual result while minimizing the prompt's footprint and improving LLM generation speed.
+**Action:** When designing prompts that instruct an LLM to generate UI components with SVGs, explicitly minify the SVG inputs by combining paths and reducing redundant attributes before adding them to the prompt.
