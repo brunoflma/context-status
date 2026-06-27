@@ -106,7 +106,7 @@ Alertas    — ícone triângulo de alerta: <path d="M8 2L1.5 14h13z" stroke-wid
 Confiança  — ícone lupa: <circle cx="7" cy="7" r="3.5" stroke-width="1.5"/><line x1="10" y1="10" x2="13.5" y2="13.5" stroke-width="1.5" stroke-linecap="round"/>
 ```
 
-**Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita):
+**Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita, com atributos `role="status"` e `aria-live="polite"` para leitores de tela):
 
 | Estado  | Cor de fundo                 | Label                   | Hint                   |
 | ------- | ---------------------------- | ----------------------- | ---------------------- |
