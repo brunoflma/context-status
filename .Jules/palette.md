@@ -7,3 +7,8 @@
 
 **Learning:** In prompt-based applications without executable application code, the LLM will omit critical accessibility attributes (like `aria-label`) unless explicitly instructed. In this case, the `progressbar` role was requested but an accessible name was omitted.
 **Action:** When designing prompts that instruct an LLM to generate UI components, explicitly include accessibility and ARIA attribute requirements (e.g., `aria-label="Contexto consumido"`) directly in the prompt specification.
+
+## 2025-02-18 - ARIA Live Regions for Dynamic Status
+
+**Learning:** When generating dynamic status UI components (like recommendation bars) via LLM, critical status updates may not be announced by screen readers unless explicitly marked with ARIA live region attributes (`role="status"`, `aria-live="polite"`).
+**Action:** Explicitly instruct the LLM to include ARIA live region attributes in the prompt specification for any dynamic status or recommendation components.
