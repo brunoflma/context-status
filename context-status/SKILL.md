@@ -94,16 +94,16 @@ Emitir sempre como **card HTML via ferramenta de visualização**, no topo da re
 
 **Zona 3 — Rows de dados:** cada row tem `ícone SVG (16×16, stroke, cor herdada, aria-hidden="true") + rótulo (cor secundária, min-width 80px) + valor (cor primária)`.
 
-### Ícones SVG de referência (inline, stroke-only, sem fill, viewBox="0 0 16 16", aria-hidden="true")
+### Ícones SVG de referência (inline, stroke-only, sem fill, viewBox="0 0 16 16", aria-hidden="true", stroke-width="1.5")
 
 ```
-Contexto   — ícone usuário: <circle cx="8" cy="5" r="2.5" stroke-width="1.5"/><path d="M3 14c0-3.5 2-5 5-5s5 1.5 5 5" stroke-width="1.5" stroke-linecap="round"/>
-Técnico    — ícone lista/clipboard: <rect x="3" y="2" width="10" height="12" rx="1.5" stroke-width="1.5"/><path d="M6 6h5M6 9h5M6 12h3" stroke-width="1.5" stroke-linecap="round"/>
-Produzido  — ícone pasta: <path d="M2 5h4l1.5 2H14v7H2z" stroke-width="1.5" stroke-linejoin="round"/>
-Conteúdo   — ícone alvo/mira: <circle cx="8" cy="8" r="5.5" stroke-width="1.5"/><circle cx="8" cy="8" r="2.5" stroke-width="1.5"/><circle cx="8" cy="8" r="0.8" fill="currentColor"/>
-Guardian   — ícone escudo: <path d="M8 2L3 4.5V8c0 3 2.5 5 5 6 2.5-1 5-3 5-6V4.5z" stroke-width="1.5" stroke-linejoin="round"/>
-Alertas    — ícone triângulo de alerta: <path d="M8 2L1.5 14h13z" stroke-width="1.5" stroke-linejoin="round"/><line x1="8" y1="7" x2="8" y2="10.5" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="12.5" r="0.7" fill="currentColor"/>
-Confiança  — ícone lupa: <circle cx="7" cy="7" r="3.5" stroke-width="1.5"/><line x1="10" y1="10" x2="13.5" y2="13.5" stroke-width="1.5" stroke-linecap="round"/>
+Contexto   — ícone usuário: <circle cx="8" cy="5" r="2.5"/><path d="M3 14c0-3.5 2-5 5-5s5 1.5 5 5" stroke-linecap="round"/>
+Técnico    — ícone lista/clipboard: <rect x="3" y="2" width="10" height="12" rx="1.5"/><path d="M6 6h5M6 9h5M6 12h3" stroke-linecap="round"/>
+Produzido  — ícone pasta: <path d="M2 5h4l1.5 2H14v7H2z" stroke-linejoin="round"/>
+Conteúdo   — ícone alvo/mira: <circle cx="8" cy="8" r="5.5"/><circle cx="8" cy="8" r="2.5"/><circle cx="8" cy="8" r="0.8" fill="currentColor" stroke="none"/>
+Guardian   — ícone escudo: <path d="M8 2L3 4.5V8c0 3 2.5 5 5 6 2.5-1 5-3 5-6V4.5z" stroke-linejoin="round"/>
+Alertas    — ícone triângulo de alerta: <path d="M8 2L1.5 14h13z" stroke-linejoin="round"/><line x1="8" y1="7" x2="8" y2="10.5" stroke-linecap="round"/><circle cx="8" cy="12.5" r="0.7" fill="currentColor" stroke="none"/>
+Confiança  — ícone lupa: <circle cx="7" cy="7" r="3.5"/><line x1="10" y1="10" x2="13.5" y2="13.5" stroke-linecap="round"/>
 ```
 
 **Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita):
