@@ -82,7 +82,7 @@ Dar visibilidade contínua sobre quatro dimensões da sessão:
 
 ## Formato do Status Report
 
-Emitir sempre como **card HTML via ferramenta de visualização**, no topo da resposta, seguido do conteúdo normal. O card tem quatro zonas:
+Emitir sempre como **card HTML via ferramenta de visualização** (garantindo que o container principal tenha `role="status"` e `aria-live="polite"`), no topo da resposta, seguido do conteúdo normal. O card tem quatro zonas:
 
 **Zona 1 — Header:** label "Status" à esquerda (font-weight 500) + pills à direita:
 
