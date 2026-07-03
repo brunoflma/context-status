@@ -86,9 +86,9 @@ Emitir sempre como **card HTML via ferramenta de visualização** (garantindo qu
 
 **Zona 1 — Header:** label "Status" à esquerda (font-weight 500) + pills à direita:
 
-- `Turno N` — pill neutra com borda
-- badge de confiança — verde (Alta) / âmbar (Média) / vermelho (Baixa)
-- badge do Guardian — azul info (inativo/ativo)
+- `Turno N` — pill neutra com borda (`title="Turno atual da sessão"`)
+- badge de confiança — verde (Alta) / âmbar (Média) / vermelho (Baixa) (`title="Nível de confiança do auto-diagnóstico"`)
+- badge do Guardian — azul info (inativo/ativo) (`title="Status da integração com Context Guardian"`)
 
 **Zona 2 — Barra de contexto:** label "Contexto" + barra de progresso horizontal (height 6px, border-radius 3px, `role="progressbar"`, `aria-label="Contexto consumido"`, `aria-valuenow="N"`, `aria-valuemin="0"`, `aria-valuemax="100"`) preenchida proporcionalmente + percentual `~N% (±8%)`. Cor da barra: `#639922` ≤40% · `#EF9F27` 41–70% · `#E24B4A` >70%.
 
