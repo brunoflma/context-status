@@ -12,3 +12,8 @@
 
 **Learning:** When instructing an LLM to generate dynamically updating UI components like a status card, explicitly specifying ARIA live region attributes (`role="status"`, `aria-live="polite"`) in the prompt ensures accessibility features are included in the generated HTML.
 **Action:** Always add ARIA attribute requirements directly in the prompt instructions when asking an LLM to generate UI components.
+
+## 2023-10-27 - ARIA Live Regions on Recommendation Bars
+
+**Learning:** When instructing LLMs to generate dynamically updating recommendation or status bars, it's crucial to explicitly require `role="status"` and `aria-live="polite"` directly in the prompt. Otherwise, screen reader users might miss critical state changes or recommendations that appear visually.
+**Action:** Always include ARIA live region attributes in the prompt instructions for dynamic UI elements like recommendation bars.
