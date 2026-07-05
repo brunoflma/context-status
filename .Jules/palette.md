@@ -17,3 +17,8 @@
 
 **Learning:** When instructing LLMs to generate dynamically updating recommendation or status bars, it's crucial to explicitly require `role="status"` and `aria-live="polite"` directly in the prompt. Otherwise, screen reader users might miss critical state changes or recommendations that appear visually.
 **Action:** Always include ARIA live region attributes in the prompt instructions for dynamic UI elements like recommendation bars.
+
+## 2023-10-27 - Single Live Region Strategy and Escalation
+
+**Learning:** When generating complex UI components like status cards, avoid nesting ARIA live regions (e.g., placing one on the parent container and another on a child element). This can cause screen readers to duplicate or spam announcements. Furthermore, critical alerts (like a "Transferência Imediata" state) should escalate the main container's semantics to `role="alert"` and `aria-live="assertive"` to ensure immediate user awareness, rather than remaining `polite`.
+**Action:** Always maintain a single, top-level live region for dynamic components. When states become critical or require immediate action, explicitly instruct the LLM to switch the live region semantics to `assertive` / `alert`.

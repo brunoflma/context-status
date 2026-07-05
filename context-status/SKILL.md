@@ -82,7 +82,7 @@ Dar visibilidade contínua sobre quatro dimensões da sessão:
 
 ## Formato do Status Report
 
-Emitir sempre como **card HTML via ferramenta de visualização** (garantindo que o container principal tenha `role="status"` e `aria-live="polite"`), no topo da resposta, seguido do conteúdo normal. O card tem quatro zonas:
+Emitir sempre como **card HTML via ferramenta de visualização** (garantindo que o container principal tenha `role="status"` e `aria-live="polite"`, ou `role="alert"` e `aria-live="assertive"` se a recomendação for Estado Crítico), no topo da resposta, seguido do conteúdo normal. O card tem quatro zonas:
 
 **Zona 1 — Header:** label "Status" à esquerda (font-weight 500) + pills à direita:
 
@@ -106,7 +106,7 @@ Alertas    — ícone triângulo de alerta: <path d="M8 2 1.5 14h13zM8 7v3.5" st
 Confiança  — ícone lupa: <path d="M7 3.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 1 0 0-7zM10 10l3.5 3.5" stroke-width="1.5" stroke-linecap="round"/>
 ```
 
-**Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita, `role="status"`, `aria-live="polite"`):
+**Zona 4 — Barra de recomendação** (cor semântica, com hint de ação à direita):
 
 | Estado  | Cor de fundo                 | Label                   | Hint                   |
 | ------- | ---------------------------- | ----------------------- | ---------------------- |
