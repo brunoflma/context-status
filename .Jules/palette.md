@@ -22,3 +22,8 @@
 
 **Learning:** When generating complex UI components like status cards, avoid nesting ARIA live regions (e.g., placing one on the parent container and another on a child element). This can cause screen readers to duplicate or spam announcements. Furthermore, critical alerts (like a "Transferência Imediata" state) should escalate the main container's semantics to `role="alert"` and `aria-live="assertive"` to ensure immediate user awareness, rather than remaining `polite`.
 **Action:** Always maintain a single, top-level live region for dynamic components. When states become critical or require immediate action, explicitly instruct the LLM to switch the live region semantics to `assertive` / `alert`.
+
+## 2024-05-24 - Preserving Accessibility When Truncating Text in LLM Prompts
+
+**Learning:** When instructing an LLM to enforce strict text truncation (e.g., limiting dynamic fields to 60 characters to prevent layout breaks or exhaustion), users lose access to the original full content. This negatively impacts accessibility and user experience in UI components like status cards where the full context is important.
+**Action:** Always pair text truncation directives with an instruction to wrap the truncated text in an element that uses a native `title` attribute (e.g., `<span title="full text">truncated...</span>`). This ensures the layout remains stable while allowing users to access the complete information via native tooltips on hover.
