@@ -15,9 +15,3 @@
 **Vulnerability:** The Claude AI skill generates HTML cards and could potentially be manipulated via prompt injection to include external resources (like `<img>` tags pointing to an attacker-controlled server). When rendered by the HTML visualization tool, these resources would be fetched, potentially leaking IP addresses, session data, or other sensitive context via URL parameters (Data Exfiltration).
 **Learning:** LLMs acting as tools/skills that output raw UI elements are vulnerable to Data Exfiltration if they are tricked into including external resources.
 **Prevention:** Always explicitly instruct the LLM in its system prompt/skill definition to never include external resources, image tags, iframes, or scripts in its rendered output, relying only on inline assets like SVG.
-
-## 2026-07-04 - Limit Dynamic Output Lengths in LLM Prompts
-
-**Vulnerability:** Unbounded dynamic strings in LLM-generated UI components can cause layout breaking or Denial of Service (DoS) via resource exhaustion.
-**Learning:** Even without executable code, excessively long text inputs passed to the UI rendering (such as long file names or decisions) can cause the UI to break.
-**Prevention:** Explicitly instruct the LLM to strictly limit the length of dynamic text to a reasonable maximum (e.g., 60 characters) and truncate with ellipses.
