@@ -15,3 +15,9 @@
 **Vulnerability:** The Claude AI skill generates HTML cards and could potentially be manipulated via prompt injection to include external resources (like `<img>` tags pointing to an attacker-controlled server). When rendered by the HTML visualization tool, these resources would be fetched, potentially leaking IP addresses, session data, or other sensitive context via URL parameters (Data Exfiltration).
 **Learning:** LLMs acting as tools/skills that output raw UI elements are vulnerable to Data Exfiltration if they are tricked into including external resources.
 **Prevention:** Always explicitly instruct the LLM in its system prompt/skill definition to never include external resources, image tags, iframes, or scripts in its rendered output, relying only on inline assets like SVG.
+
+## 2024-08-16 - [Credential Exposure Risk in LLM-Generated HTML Tools]
+
+**Vulnerability:** The Claude AI skill generates dynamic HTML cards summarizing conversation context and technical decisions. If an API key or password is discussed in the session and inadvertently selected as a session "anchor," the LLM might render these secrets in the generated HTML card, leading to credential exposure.
+**Learning:** LLMs acting as summary or diagnostic tools may leak secrets from the conversation context into their output unless explicitly instructed otherwise.
+**Prevention:** Always explicitly instruct the LLM in its system prompt to actively mask or hide (e.g., `sk-...`) any API keys, passwords, tokens, or credentials when rendering dynamic context summaries, preventing accidental exposure of secrets in generated UI elements.
